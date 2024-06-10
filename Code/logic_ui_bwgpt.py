@@ -131,7 +131,7 @@ st.markdown('<br><br>', unsafe_allow_html=True)
 st.markdown(
     """
     <div style='text-align: center;'>
-        <p>Thank you for using the Machine Learning Customer Segmentation System!</p>
+        <p>Thank you for using the Machine Learning Customer Segmentation System!!</p>
     </div>
     """,
     unsafe_allow_html=True
