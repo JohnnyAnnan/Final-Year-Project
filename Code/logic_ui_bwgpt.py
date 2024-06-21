@@ -89,12 +89,13 @@ if file:
     else:
         df = pd.read_excel(file)
     
+    st.markdown('<label style="font-size: 20px; font-weight: bold;">Data Overview</label>', unsafe_allow_html=True)
     st.write(df.head())
 
     st.markdown('<br>', unsafe_allow_html=True)
 
     # Attribute selection for analysis
-    st.markdown('<label style="font-size: 16px; font-weight: bold;">Select Attribute against Spending Score</label>', unsafe_allow_html=True)
+    st.markdown('<label style="font-size: 16px; font-weight: bold;">Explore Spending Score Pattern by</label>', unsafe_allow_html=True)
     attribute = st.selectbox('', options=['Gender', 'Age', 'Annual Income ($)', 'Profession', 'Work Experience'])
 
     if attribute:
@@ -131,7 +132,7 @@ st.markdown('<br><br>', unsafe_allow_html=True)
 st.markdown(
     """
     <div style='text-align: center;'>
-        <p>Thank you for using the Machine Learning Customer Segmentation System!!</p>
+        <p></p>
     </div>
     """,
     unsafe_allow_html=True
